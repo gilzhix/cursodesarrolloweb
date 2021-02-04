@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 /* //normalize */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -349,10 +351,91 @@
     display: none;
   }
   /* fin del normalize  */
-  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200;1,300&display=swap');
-body{
-    font-family: arial,sans-serif;
+ 
+
+  html, body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+ 
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', sans-serif; 
+  font-weight: normal;
+}
+
 h1{
-    font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  color: aliceblue;
+  margin: 100px 500px 70px 30px;
 }
+h1 strong {
+  color: #026fff;
+}
+.header{
+  background-color: #1b2127;
+  color:aliceblue;
+  padding: 0;
+  margin:0;
+  
+}
+.header a{
+  color: aliceblue;
+  text-decoration: none;
+  margin:0;
+}
+.header ol{
+  margin-bottom: 0;
+}
+.hero{
+  height: 300px;
+  background-color: #1b2127;
+  background-image: url('https://i.imgur.com/CzuEqA5.gif');
+  background-size: 500px 300px ;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.portafolio{
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid pink;
+  border-bottom: 10px solid orangered; */
+
+  margin-bottom: 15px;
+  margin-right: 0% ;
+  background-color: #fafafa;
+ 
+  
+}
+.project{
+  border: 1px solid gray;
+  border-radius: 10px ;
+  margin: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  
+}
+
+.project-details{
+  width: 500px;
+  margin: 10px 20px;
+  
+}
+.project-imageContainer{
+  width: 500px;
+}
+.logo{
+  margin-bottom: auto;
+}
+
