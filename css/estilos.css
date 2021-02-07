@@ -392,17 +392,17 @@ h1 strong {
   padding: 0;
   margin:0;
   display: flex;
+  align-items: center;
   justify-content: space-between; 
+  flex-wrap: wrap;
 }
 .header a{
-  color: aliceblue;
-  text-decoration: none;
-  margin:0;
-  height: inherit;
-  display: flex;  
+  display: flex;
   align-items: center;
-  padding: 0 10px;
   height: inherit;
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
 }
 .header ol{
   display: flex;
@@ -429,6 +429,7 @@ figure{
   background-position-x: right; */
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .portafolio{
   /* border-top: 10px solid red;
@@ -449,13 +450,15 @@ figure{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .project strong{
   font-family: 'Fjalla One', sans-serif;
 
 }
-.project_course,.project-_date, .project_url{
-  margin: 10 0;
+.project_course,.project_date, .project_url{
+  margin: .3em 0;
+  margin-bottom: .3em;
 }
 .project_title{
   font-size: 30px;
@@ -467,10 +470,14 @@ figure{
 }
 
 .project-details{
-  width: 350px;
+  width: 50%;
 }
 .project-imageContainer{
-  width: 500px;
+  width: 50%;
+}
+.project-imageContainer img{
+  max-width:100%;
+  width: 100%;
 }
 .logo{
   margin-bottom: auto;
@@ -490,6 +497,7 @@ height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer a{
   color: white;
@@ -499,8 +507,8 @@ height: inherit;
 }
 .event{
  
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
@@ -540,6 +548,7 @@ height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .social{
   padding-top: 50px;
@@ -596,15 +605,93 @@ height: inherit;
   font-family: 'Source Sans Pro', sans-serif;
 }
 .container{
-  width: 1000px;
+  max-width: 1000px;
+  /* width: 100%; */
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-self: inherit;
   height: inherit;
+  flex-wrap: inherit;
 }
 .hero-image{
   width: 300px;
   height: 300px;
   border-radius:150px;
+}
+
+/* desktop first que empiences desde el mq mas grande */
+
+@media screen and (max-width: 1023px){
+ 
+}
+@media screen and (max-width: 767px){
+  .header{
+    display: block;
+    height: auto; 
+  }
+  .header ol{
+    display: block;
+  }
+  .header ol li{
+    height: 50px;
+  }
+  .header a{
+    justify-content: center;
+  }
+  .header .logo {
+    text-align: center;
+  }
+  .project{
+    display: block;
+  }
+  .project-imageContainer{
+    width: auto;
+    text-align: center;
+  }
+  .project-details{
+    width: auto;
+    /* font-size: 16px; */
+  }
+  .project_title{
+    font-size: 1.5em;
+
+  }
+  .project_url{
+    font-size: 1em;
+  }
+  .project_course{
+    font-size: .7em;
+  }
+  .project_date{
+    font-size: 1em;
+  }
+  .project_description{
+    font-size: .8em;
+  }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img{
+    max-height: 250px;
+    object-position: 25% 25%;
+    }
+    .event-detail{
+      margin: -2em .5em .5em .5em;
+      padding: 1em;
+    }
+}
+  
+@media screen and (max-width: 480px){
+  .project-details{
+    width: auto;
+    font-size: 12px;
+  }
+ 
+}
+@media screen and (max-width: 320px){
+
+  
 }
