@@ -504,6 +504,7 @@ height: inherit;
 }
 .experiencia{
   display:flex;
+  flex-wrap: wrap;
 }
 .event{
  
@@ -519,6 +520,7 @@ height: inherit;
   height: 200px;
   object-fit: cover;
 }
+
 .event-detail{
   margin:20px 40px;
   margin-top: -40px;
@@ -624,7 +626,9 @@ height: inherit;
 /* desktop first que empiences desde el mq mas grande */
 
 @media screen and (max-width: 1023px){
- 
+ .container{
+   padding: 0 1em;
+ }
 }
 @media screen and (max-width: 767px){
   .header{
@@ -679,15 +683,36 @@ height: inherit;
     object-position: 25% 25%;
     }
     .event-detail{
-      margin: -2em .5em .5em .5em;
+      margin: -2em .5em .5em ;
       padding: 1em;
     }
+    .contact{
+  
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+    display: block;
+    }
+    .form-email button{
+      margin: 1.5em auto;
+    }
+    .form-email h3{
+      margin-top: 0;
+    }
+    .footer{
+      display: block;
+      text-align: center;
+      border:1px solid transparent;
+    }
 }
+
   
 @media screen and (max-width: 480px){
   .project-details{
     width: auto;
     font-size: 12px;
+    text-align: center;
+    display: block;
   }
  
 }
