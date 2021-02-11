@@ -488,7 +488,7 @@ figure{
   margin-bottom: 15px;
   margin-right: 0% ;
   background-color: #fafafa;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .project{
   border: 1px solid gray;
@@ -674,7 +674,7 @@ height: inherit;
 
 /* desktop first que empiences desde el mq mas grande */
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1024px){
  .container{
    padding: 0 1em;
  }
@@ -717,6 +717,9 @@ height: inherit;
   width: 100%;
   object-position: center 25%;
   opacity:0.3;  
+}
+.portafolio{
+  padding: 0;
 }
 }
 
@@ -824,7 +827,7 @@ height: inherit;
 @media screen and (max-width: 480px){
   .project-details{
     width: auto;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     display: block;
   }
