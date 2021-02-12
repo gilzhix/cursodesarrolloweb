@@ -668,12 +668,18 @@ height: inherit;
 }
 .hero-image{
   object-fit: fill;
+ 
   
   
 }
 
 /* desktop first que empiences desde el mq mas grande */
-
+@media screen and (min-width: 1024px){
+.hero-image{
+  border-radius: 50%;
+  border: 2px solid #026fff;
+}
+}
 @media screen and (max-width: 1024px){
  .container{
    padding: 0 1em;
@@ -684,6 +690,7 @@ height: inherit;
   overflow: hidden;
   padding: 2em;
 }
+
   h1{
   font-size: 2em;
   z-index: 2;
